@@ -13,7 +13,7 @@ body{
     color: #fff;
 }
 
-#content{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: center;
