@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --background-col: rgb(43, 43, 43);
+}
+
+body{
+    background-color: var(--background-col);
+    color: #fff;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
