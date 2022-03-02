@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+
 *,
 *::before,
 *::after{
     box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+    letter-spacing: 3px;
 }
 
 :root{
@@ -24,6 +29,7 @@ ul{
 
 header{
     /* background-color: lightgreen; */
+    margin-top: 50px;
     width: 50%;
     height: 80px;
     display: flex;
@@ -41,13 +47,14 @@ header{
 }
 
 .nav-item{
-    margin-left: 20px;
+    margin-left: 50px;
     padding: 15px 35px;
     /* background-color: lightseagreen; */
 }
 
 .nav-item:hover{
     background-color: var(--primary-col);
+    cursor: pointer;
 }
 
 .nav-item a{
@@ -62,6 +69,33 @@ main{
     height: 60%;
 }
 
-h1{
-    font-size: 50px;
+h1 span{
+    font-size: 120px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+}
+
+h3{
+    margin-top: -40px;
+
+}
+
+.details{
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.details > p{
+    margin-bottom: -10px;
+}
+
+
+
+
+footer a{
+    color: var(--primary-col);
+}
+
+footer a:hover{
+    color: #fff;
 }
