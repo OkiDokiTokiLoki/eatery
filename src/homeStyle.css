@@ -90,12 +90,25 @@ h3{
 }
 
 
+footer{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-footer a{
+.personal{
+    text-decoration: none;
     color: var(--primary-col);
 }
 
-footer a:hover{
+.personal:hover{
     color: #fff;
+}
+
+.credit{
+    text-decoration: none;
+    color: #fff;
+}
+
+.credit:hover{
+    color: var(--primary-col);
 }
