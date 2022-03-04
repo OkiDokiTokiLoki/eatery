@@ -1,53 +1,47 @@
-// export default function landingComponent() {
-//     headerComponent();
-//     mainComponent();
-//     footerCompoonent();
-// }
-
 // headerComponent
-// export default function landingComponent() {  
+export function headerComponent() {  
 
-//     const headerContent = document.createElement('header');
+    const headerContent = document.createElement('header');
 
-//     const logoLink = document.createElement('a');
-//     logoLink.classList.add('logo-link');
-//     logoLink.setAttribute('href', '#');
-//     headerContent.appendChild(logoLink);
+    const logoLink = document.createElement('a');
+    logoLink.classList.add('logo-link');
+    logoLink.setAttribute('href', '#');
+    headerContent.appendChild(logoLink);
 
-//     const logoImg = document.createElement('img');
-//     logoImg.classList.add('logo');
-//     logoImg.setAttribute('src', 'https://via.placeholder.com/300x80');
-//     logoLink.appendChild(logoImg);
+    const logoImg = document.createElement('img');
+    logoImg.classList.add('logo');
+    logoImg.setAttribute('src', 'https://via.placeholder.com/300x80');
+    logoLink.appendChild(logoImg);
 
-//     const navbar = document.createElement('ul');
-//     navbar.classList.add('navbar');
-//     headerContent.appendChild(navbar);
+    const navbar = document.createElement('ul');
+    navbar.classList.add('navbar');
+    headerContent.appendChild(navbar);
 
-//     const navItem1 = document.createElement('li');
-//     navItem1.classList.add('nav-item');
-//     navbar.appendChild(navItem1);
+    const navItem1 = document.createElement('li');
+    navItem1.classList.add('nav-item');
+    navbar.appendChild(navItem1);
 
-//     const navLink1 = document.createElement('a');
-//     navLink1.classList.add('nav-link');
-//     navLink1.setAttribute('href', '#');
-//     navLink1.innerText = 'Menu';
-//     navItem1.appendChild(navLink1);
+    const navLink1 = document.createElement('a');
+    navLink1.classList.add('nav-link');
+    navLink1.setAttribute('href', '#');
+    navLink1.innerText = 'Menu';
+    navItem1.appendChild(navLink1);
 
-//     const navItem2 = document.createElement('li');
-//     navItem2.classList.add('nav-item');
-//     navbar.appendChild(navItem2);
+    const navItem2 = document.createElement('li');
+    navItem2.classList.add('nav-item');
+    navbar.appendChild(navItem2);
 
-//     const navLink2 = document.createElement('a');
-//     navLink2.classList.add('nav-link');
-//     navLink2.setAttribute('href', '#');
-//     navLink2.innerText = 'Contact';
-//     navItem2.appendChild(navLink2);
+    const navLink2 = document.createElement('a');
+    navLink2.classList.add('nav-link');
+    navLink2.setAttribute('href', '#');
+    navLink2.innerText = 'Contact';
+    navItem2.appendChild(navLink2);
     
-//    return headerContent;
-// }
+   return headerContent;
+}
 
 // mainComponent
-// export default function landingComponent() {
+// export function mainComponent() {
 
 //     const mainContent = document.createElement('div');
 //     mainContent.classList.add('main');
@@ -80,29 +74,36 @@
 // }
 
 // footerComponent
-export default function landingComponent() {
+// export function footerComponent() {
 
-    const footerContent = document.createElement('footer');
+//     const footerContent = document.createElement('footer');
 
-    const gitP = document.createElement('p');
-    gitP.innerText = '©';
-    footerContent.appendChild(gitP);
+//     const gitP = document.createElement('p');
+//     gitP.innerText = '©';
+//     footerContent.appendChild(gitP);
 
-    const dateScript = document.createElement('p');
-    dateScript.innerHTML = new Date().getFullYear();
-    gitP.appendChild(dateScript);
+//     const dateScript = document.createElement('p');
+//     dateScript.innerHTML = new Date().getFullYear();
+//     gitP.appendChild(dateScript);
 
-    const gitLink = document.createElement('a');
-    gitLink.classList.add('personal');
-    gitLink.innerText = 'OkiDokiTokiLoki';
-    gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
-    gitP.appendChild(gitLink);
+//     const gitLink = document.createElement('a');
+//     gitLink.classList.add('personal');
+//     gitLink.innerText = 'OkiDokiTokiLoki';
+//     gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
+//     gitP.appendChild(gitLink);
 
-    const creditLink = document.createElement('a');
-    creditLink.classList.add('credit');
-    creditLink.innerText = 'image credit: Ferks Guare [unsplash]';
-    creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
-    footerContent.appendChild(creditLink);
+//     const creditLink = document.createElement('a');
+//     creditLink.classList.add('credit');
+//     creditLink.innerText = 'image credit: Ferks Guare [unsplash]';
+//     creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
+//     footerContent.appendChild(creditLink);
     
-   return footerContent;
+//    return footerContent;
+// }
+
+
+export default function landingComponent() {
+    headerComponent();
+    // mainComponent;
+    // footerComponent();
 }
