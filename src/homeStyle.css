@@ -18,6 +18,7 @@ body{
     color: #fff;
     padding-left: 5%;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     height: 98vh;
@@ -28,7 +29,7 @@ ul{
 }
 
 header{
-    margin-top: 50px;
+    margin: 50px 0 100px 0;
     width: 50%;
     height: 80px;
     display: flex;
@@ -70,11 +71,11 @@ h1 span{
     font-size: 120px;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 4px;
+    margin-top: -10px;
 }
 
 h3{
-    margin-top: -40px;
-
+    margin-top: -30px;
 }
 
 .details{
@@ -88,24 +89,45 @@ h3{
 
 
 footer{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
 
-.personal{
-    text-decoration: none;
-    color: var(--primary-col);
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.personal:hover{
-    color: #fff;
+.year{
+    margin: 0 10px;
 }
 
+.personal,
 .credit{
     text-decoration: none;
     color: #fff;
 }
 
+.personal:hover,
 .credit:hover{
     color: var(--primary-col);
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    cursor: pointer;
 }

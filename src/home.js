@@ -1,3 +1,5 @@
+import './homeStyle.css';
+
 // headerComponent
 function headerComponent() {  
 
@@ -50,6 +52,9 @@ function mainComponent() {
     heading1.innerText = 'Welcome to ';
     mainContent.appendChild(heading1);
 
+    const hBreak = document.createElement('br');
+    heading1.appendChild(hBreak);
+
     const headingSpan = document.createElement('span');
     headingSpan.innerText = 'The Eatery';
     heading1.appendChild(headingSpan);
@@ -83,6 +88,7 @@ function footerComponent() {
     footerContent.appendChild(gitP);
 
     const dateScript = document.createElement('p');
+    dateScript.classList.add('year');
     dateScript.innerHTML = new Date().getFullYear();
     gitP.appendChild(dateScript);
 
@@ -109,6 +115,10 @@ function landingComponent() {
     const landingHeader = headerComponent();
     const landingMain = mainComponent();
     const landingFooter = footerComponent();
+
+    const bgOverlay = document.createElement('div');
+    bgOverlay.classList.add('overlay');
+    fullPage.appendChild(bgOverlay);
 
     fullPage.appendChild(landingHeader);
     fullPage.appendChild(landingMain);
