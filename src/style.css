@@ -16,6 +16,7 @@
 body{
     background-color: var(--background-col);
     color: #fff;
+    font-weight: 600;
 }
 
 .overlay {
