@@ -4,55 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/homeStyle.css">
-    <title>#########################+</title>
+    <link rel="stylesheet" href="./src/contactStyle.css">
+    <title>Contact</title>
 </head>
 <body>
-    
-    <header>
-        <a href="#" class="logo-link">
-            <img src="https://via.placeholder.com/300x80" class="logo" alt="logo">
-        </a>
+    <h1>hello world</h1>
 
-        <nav>
-            <ul class="navbar">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="bigCTA section">
+        <img src="https://via.placeholder.com/400" alt="">
 
-    <main>
-        <h1>Welcome to 
-            <br>
-            <span>The Eatery</span>
-        </h1>
+        <div class="form">
+            <h2>We'd love to hear from you</h2>
+            <form action="/" method="post">
+                <ul class="contact-form">
+                    <li>
+                        <label for="contactName">Name*</label>
+                        <input type="text" name="name" id="contactName" placeholder="Gordon Ramsay" required>
+                    </li>
+                    <li>
+                        <label for="contactNumber">Number*</label>
+                        <input type="number" name="number" id="contactNumber" placeholder="012 345 6789" required>
+                    </li>
+                    <li>
+                        <label for="contactMessage">Message*</label>
+                        <textarea name="message" id="contactMessage" cols="30" rows="8" required></textarea>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
 
-        <h3>Feast your eyes on some catchy slogan here</h3>
-    
-        <div class="details">
+    <div class="smallCTA section">
+        <div class="contact">
             <p>123 Real Address, Fictional Town</p>
             <p>Delivery: 123 123 1234</p>
         </div>
-    </main>    
-
-    <footer>
-        <p>©
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-            <a href="https://github.com/OkiDokiTokiLoki/eatery" target="_blank" class="personal">
-                OkiDokiTokiLoki
-            </a>
-	    </p>
-        <a href="https://unsplash.com/photos/KEZdWfYD-ow" target="_blank" class="credit">
-            image credit: Ferks Guare [unsplash]
-        </a>
-    </footer>
-
+        <div class="socials">
+            <button><img src="#" alt="facebook">fb</button>
+            <button><img src="#" alt="instagram">ig</button>
+            <button><img src="#" alt="twitter">tw</button>
+        </div>
+    </div>
 </body>
 </html>
