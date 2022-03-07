@@ -18,6 +18,116 @@ body{
     color: #fff;
 }
 
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.45);
+    z-index: -1;
+    cursor: pointer;
+}
 
 
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 98vh;
+
+    background: url(../testAssets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form{
+    width: 275px;
+    padding: 0;
+}
+
+li input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.socials{
+    margin-left: 100px;
+}
+
+.socials button{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.socials button:first-child{
+    background-color: rgb(21, 78, 163);
+}
+
+.socials button:first-child:hover{
+    background-color: hsl(216, 77%, 40%);
+}
+
+.socials button:nth-child(2){
+    background-color: rgb(135, 21, 163);
+}
+
+.socials button:nth-child(2):hover{
+    background-color: hsl(288, 77%, 40%);
+}
+
+.socials button:nth-child(3){
+    background-color: rgb(21, 117, 182);
+}
+
+.socials button:nth-child(3):hover{
+    background-color: hsl(204, 79%, 45%);
+}
 
