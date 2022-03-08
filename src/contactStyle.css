@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    margin: 50px 0;
+    margin: 30px 0;
     width: 800px;
     height: 80px;
     display: flex;
@@ -62,7 +62,7 @@ section{
     align-items: center;
     justify-content: space-evenly;
     width: 800px;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .form{

@@ -177,33 +177,33 @@ function contactSmall() {
 }
 
 // footerComponent
-// function conFooter() {
+function conFooter() {
 
-//     const footerContent = document.createElement('footer');
+    const footerContent = document.createElement('footer');
 
-//     const gitP = document.createElement('p');
-//     gitP.innerText = '©';
-//     footerContent.appendChild(gitP);
+    const gitP = document.createElement('p');
+    gitP.innerText = '©';
+    footerContent.appendChild(gitP);
 
-//     const dateScript = document.createElement('p');
-//     dateScript.classList.add('year');
-//     dateScript.innerHTML = new Date().getFullYear();
-//     gitP.appendChild(dateScript);
+    const dateScript = document.createElement('p');
+    dateScript.classList.add('year');
+    dateScript.innerHTML = new Date().getFullYear();
+    gitP.appendChild(dateScript);
 
-//     const gitLink = document.createElement('a');
-//     gitLink.classList.add('personal');
-//     gitLink.innerText = 'OkiDokiTokiLoki';
-//     gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
-//     gitP.appendChild(gitLink);
+    const gitLink = document.createElement('a');
+    gitLink.classList.add('personal');
+    gitLink.innerText = 'OkiDokiTokiLoki';
+    gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
+    gitP.appendChild(gitLink);
 
-//     const creditLink = document.createElement('a');
-//     creditLink.classList.add('credit');
-//     creditLink.innerText = 'image credit: Ferks Guare [unsplash]';
-//     creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
-//     footerContent.appendChild(creditLink);
+    const creditLink = document.createElement('a');
+    creditLink.classList.add('credit');
+    creditLink.innerText = 'image credit: LUM3N [unsplash]';
+    creditLink.setAttribute('href', 'https://unsplash.com/photos/Ngy0B2YWalk');
+    footerContent.appendChild(creditLink);
     
-//    return footerContent;
-// }
+   return footerContent;
+}
 
 function overlay(){
     const bgOverlay = document.createElement('div');
@@ -221,11 +221,13 @@ function contactComponent() {
     const conBig = contactBig();
     const conSmall = contactSmall();
     const conOverlay = overlay();
+    const conFoot = conFooter()
 
     contactPage.appendChild(conHeader);
     contactPage.appendChild(pageHeader);
     contactPage.appendChild(conBig);
     contactPage.appendChild(conSmall);
+    contactPage.appendChild(conFoot);
     contactPage.appendChild(conOverlay);
 }
 

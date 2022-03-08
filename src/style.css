@@ -37,3 +37,33 @@ ul{
     z-index: -1;
     cursor: pointer;
 }
+
+footer{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.year{
+    margin: 0 10px;
+}
+
+.personal,
+.credit{
+    text-decoration: none;
+    color: #fff;
+}
+
+.personal:hover,
+.credit:hover{
+    color: var(--primary-col);
+}
