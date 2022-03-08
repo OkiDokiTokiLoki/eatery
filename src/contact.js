@@ -7,7 +7,7 @@ function contactHeader() {
 
     const logoLink = document.createElement('a');
     logoLink.classList.add('logo-link');
-    logoLink.setAttribute('href', '#');
+    logoLink.setAttribute('href', '../src/index.js');
     headerContent.appendChild(logoLink);
 
     const logoImg = document.createElement('img');
@@ -50,10 +50,17 @@ function pageHead(){
     return pageHeading;
 }
 
-// mainComponent
+// big section
 function contactBig() {
 
     const bigSection = document.createElement('section');
+
+    // helper function to set multiple attributes on an element
+    function setAttributes(el, attrs) {
+        for(let key in attrs) {
+          el.setAttribute(key, attrs[key]);
+        }
+    }
 
     const mapImg = document.createElement('img');
     mapImg.setAttribute('src', 'https://via.placeholder.com/400');
@@ -83,10 +90,9 @@ function contactBig() {
     listItem1.appendChild(listLabelName);
 
     const listInputName = document.createElement('input');
-    listInputName.id = 'contactName';
-    // listInputName.setAttribute('placeholder', 'Gordon Ramsay');
+    setAttributes(listInputName, {"name": "name", "id": "contactName", "placeholder": "Gordon Ramsay"});
+    listInputName.required = true;
     listItem1.appendChild(listInputName);
-    // set required attribute
 
     const listItem2 = document.createElement('li');
     formList.appendChild(listItem2);
@@ -97,10 +103,9 @@ function contactBig() {
     listItem2.appendChild(listLabelNumber);
 
     const listInputNumber = document.createElement('input');
-    listInputNumber.id = 'contactNumber';
-    listInputNumber.setAttribute('type', 'number');
+    setAttributes(listInputNumber, {"type": "number", "name": "number", "id": "contactNumber", "placeholder": "012 345 6789"});
+    listInputNumber.required = true;
     listItem2.appendChild(listInputNumber);
-    // set required attribute
 
     const listItem3 = document.createElement('li');
     formList.appendChild(listItem3);
@@ -110,24 +115,24 @@ function contactBig() {
     listLabelMessage.innerText = 'Message';
     listItem3.appendChild(listLabelMessage);
 
-    const listInputMessage = document.createElement('textarea');
-    listInputMessage.id = 'contactMessage';
-    
-    function setAttributes(el, attrs) {
-        for(let key in attrs) {
-          el.setAttribute(key, attrs[key]);
-        }
-    }
-      
-    setAttributes(listInputMessage, {"name": "message", "cols": "52", "rows": "8", "placeholder": "Any questions or suggestions?"});
+    const listInputMessage = document.createElement('textarea');     
+    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "52", "rows": "8", "placeholder": "Any questions or suggestions?"});
+    listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 
    return bigSection;
 }
 
+// small section
 function contactSmall() {
 
     const smallSection = document.createElement('section');
+
+    function setAttributes(el, attrs) {
+        for(let key in attrs) {
+          el.setAttribute(key, attrs[key]);
+        }
+    }
 
     const contactDiv = document.createElement('div');
     contactDiv.classList.add('contact');
@@ -148,14 +153,7 @@ function contactSmall() {
     const fbBtn = document.createElement('button');
     socialsDiv.appendChild(fbBtn);
 
-    const fbImg = document.createElement('img');
-
-    function setAttributes(el, attrs) {
-        for(let key in attrs) {
-          el.setAttribute(key, attrs[key]);
-        }
-    }
-      
+    const fbImg = document.createElement('img');      
     setAttributes(fbImg, {"src": "#", "alt": "facebook"});
     fbBtn.appendChild(fbImg);
 
