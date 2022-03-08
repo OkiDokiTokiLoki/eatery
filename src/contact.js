@@ -53,11 +53,11 @@ function pageHead(){
 // mainComponent
 function contactBig() {
 
-    const mainContent = document.createElement('section');
+    const bigSection = document.createElement('section');
 
     const formDiv = document.createElement('div');
     formDiv.classList.add('details');
-    mainContent.appendChild(formDiv);
+    bigSection.appendChild(formDiv);
 
     const heading2 = document.createElement('h2');
     heading2.innerText = "We'd love to hear from you";
@@ -122,38 +122,95 @@ function contactBig() {
     setAttributes(listInputMessage, {"name": "message", "cols": "52", "rows": "8", "placeholder": "Any questions or suggestions?"});
     listItem3.appendChild(listInputMessage);
 
-   return mainContent;
+   return bigSection;
+}
+
+function contactSmall() {
+
+    const smallSection = document.createElement('section');
+
+    const contactDiv = document.createElement('div');
+    contactDiv.classList.add('contact');
+    smallSection.appendChild(contactDiv);
+
+    const contactAddress = document.createElement('p');
+    contactAddress.innerText = '123 Real Address, Fictional Town';
+    contactDiv.appendChild(contactAddress);
+
+    const contactDelivery = document.createElement('p');
+    contactDelivery.innerText = 'Delivery: 123 123 1234';
+    contactDiv.appendChild(contactDelivery);
+
+    const socialsDiv = document.createElement('div');
+    socialsDiv.classList.add('socials');
+    smallSection.appendChild(socialsDiv);
+
+    const fbBtn = document.createElement('button');
+    socialsDiv.appendChild(fbBtn);
+
+    const fbImg = document.createElement('img');
+
+    function setAttributes(el, attrs) {
+        for(let key in attrs) {
+          el.setAttribute(key, attrs[key]);
+        }
+    }
+      
+    setAttributes(fbImg, {"src": "#", "alt": "facebook"});
+    fbBtn.appendChild(fbImg);
+
+    const igBtn = document.createElement('button');
+    socialsDiv.appendChild(igBtn);
+
+    const igImg = document.createElement('img');
+    setAttributes(igImg, {"src": "#", "alt": "instagram"});
+    igBtn.appendChild(igImg);
+
+    const twBtn = document.createElement('button');
+    socialsDiv.appendChild(twBtn);
+
+    const twImg = document.createElement('img');
+    setAttributes(twImg, {"src": "#", "alt": "twitter"});
+    twBtn.appendChild(twImg);
+    
+   return smallSection;
 }
 
 // footerComponent
-function contactSmall() {
+// function conFooter() {
 
-    const footerContent = document.createElement('footer');
+//     const footerContent = document.createElement('footer');
 
-    const gitP = document.createElement('p');
-    gitP.innerText = '©';
-    footerContent.appendChild(gitP);
+//     const gitP = document.createElement('p');
+//     gitP.innerText = '©';
+//     footerContent.appendChild(gitP);
 
-    const dateScript = document.createElement('p');
-    dateScript.classList.add('year');
-    dateScript.innerHTML = new Date().getFullYear();
-    gitP.appendChild(dateScript);
+//     const dateScript = document.createElement('p');
+//     dateScript.classList.add('year');
+//     dateScript.innerHTML = new Date().getFullYear();
+//     gitP.appendChild(dateScript);
 
-    const gitLink = document.createElement('a');
-    gitLink.classList.add('personal');
-    gitLink.innerText = 'OkiDokiTokiLoki';
-    gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
-    gitP.appendChild(gitLink);
+//     const gitLink = document.createElement('a');
+//     gitLink.classList.add('personal');
+//     gitLink.innerText = 'OkiDokiTokiLoki';
+//     gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
+//     gitP.appendChild(gitLink);
 
-    const creditLink = document.createElement('a');
-    creditLink.classList.add('credit');
-    creditLink.innerText = 'image credit: Ferks Guare [unsplash]';
-    creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
-    footerContent.appendChild(creditLink);
+//     const creditLink = document.createElement('a');
+//     creditLink.classList.add('credit');
+//     creditLink.innerText = 'image credit: Ferks Guare [unsplash]';
+//     creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
+//     footerContent.appendChild(creditLink);
     
-   return footerContent;
-}
+//    return footerContent;
+// }
 
+function overlay(){
+    const bgOverlay = document.createElement('div');
+    bgOverlay.classList.add('overlay');
+    
+    return bgOverlay;
+}
 
 function contactComponent() {
 
@@ -163,10 +220,7 @@ function contactComponent() {
     const pageHeader = pageHead();
     const conBig = contactBig();
     const conSmall = contactSmall();
-
-    const bgOverlay = document.createElement('div');
-    bgOverlay.classList.add('overlay');
-    contactPage.appendChild(bgOverlay);
+    const conOverlay = overlay();
 
     contactPage.appendChild(conHeader);
     contactPage.appendChild(pageHeader);

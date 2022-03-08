@@ -107,6 +107,13 @@ function footerComponent() {
    return footerContent;
 }
 
+function overlay(){
+    const bgOverlay = document.createElement('div');
+    bgOverlay.classList.add('overlay');
+    
+    return bgOverlay;
+}
+
 
 function landingComponent() {
 
@@ -115,14 +122,13 @@ function landingComponent() {
     const landingHeader = headerComponent();
     const landingMain = mainComponent();
     const landingFooter = footerComponent();
-
-    const bgOverlay = document.createElement('div');
-    bgOverlay.classList.add('overlay');
-    fullPage.appendChild(bgOverlay);
+    const landingOverlay = overlay();
+    
 
     fullPage.appendChild(landingHeader);
     fullPage.appendChild(landingMain);
     fullPage.appendChild(landingFooter);
+    fullPage.append(landingOverlay);
 }
 
 export default landingComponent;
