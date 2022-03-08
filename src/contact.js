@@ -1,4 +1,4 @@
-import './homeStyle.css';
+import './contactStyle.css';
 
 // headerComponent
 function contactHeader() {  
@@ -55,8 +55,12 @@ function contactBig() {
 
     const bigSection = document.createElement('section');
 
+    const mapImg = document.createElement('img');
+    mapImg.setAttribute('src', 'https://via.placeholder.com/400');
+    bigSection.appendChild(mapImg);
+
     const formDiv = document.createElement('div');
-    formDiv.classList.add('details');
+    formDiv.classList.add('form');
     bigSection.appendChild(formDiv);
 
     const heading2 = document.createElement('h2');
@@ -75,7 +79,7 @@ function contactBig() {
 
     const listLabelName = document.createElement('label');
     listLabelName.setAttribute('for', 'contactName');
-    listLabelName.innerText = 'Name*';
+    listLabelName.innerText = 'Name';
     listItem1.appendChild(listLabelName);
 
     const listInputName = document.createElement('input');
@@ -84,14 +88,12 @@ function contactBig() {
     listItem1.appendChild(listInputName);
     // set required attribute
 
-
-
     const listItem2 = document.createElement('li');
     formList.appendChild(listItem2);
 
     const listLabelNumber = document.createElement('label');
     listLabelNumber.setAttribute('for', 'contactNumber');
-    listLabelNumber.innerText = 'Number*';
+    listLabelNumber.innerText = 'Number';
     listItem2.appendChild(listLabelNumber);
 
     const listInputNumber = document.createElement('input');
@@ -99,8 +101,6 @@ function contactBig() {
     listInputNumber.setAttribute('type', 'number');
     listItem2.appendChild(listInputNumber);
     // set required attribute
-
-
 
     const listItem3 = document.createElement('li');
     formList.appendChild(listItem3);
@@ -226,6 +226,7 @@ function contactComponent() {
     contactPage.appendChild(pageHeader);
     contactPage.appendChild(conBig);
     contactPage.appendChild(conSmall);
+    contactPage.appendChild(conOverlay);
 }
 
 export default contactComponent;

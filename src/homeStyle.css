@@ -9,10 +9,6 @@
     letter-spacing: 3px;
 }
 
-:root{
-    --primary-col: rgb(178, 90, 32);
-}
-
 body{
     background: url(../testAssets/ferks-guare-burger.jpg) no-repeat fixed center;
     color: #fff;
