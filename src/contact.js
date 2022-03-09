@@ -7,7 +7,7 @@ function contactHeader() {
 
     const logoLink = document.createElement('a');
     logoLink.classList.add('logo-link');
-    logoLink.setAttribute('href', '../src/index.js');
+    logoLink.setAttribute('href', '../dist/');
     headerContent.appendChild(logoLink);
 
     const logoImg = document.createElement('img');
@@ -30,7 +30,7 @@ function contactHeader() {
     navItem1.appendChild(navLink1);
 
     const navItem2 = document.createElement('li');
-    navItem2.classList.add('nav-item');
+    navItem2.classList.add('nav-item', 'active');
     navbar.appendChild(navItem2);
 
     const navLink2 = document.createElement('a');
@@ -116,7 +116,7 @@ function contactBig() {
     listItem3.appendChild(listLabelMessage);
 
     const listInputMessage = document.createElement('textarea');     
-    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "52", "rows": "8", "placeholder": "Any questions or suggestions?"});
+    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "40", "rows": "8", "placeholder": "Any questions or suggestions?"});
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 

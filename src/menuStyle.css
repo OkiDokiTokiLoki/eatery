@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+:root{
+    --background-col: rgb(43, 43, 43);
+    --primary-col: rgb(178, 90, 32);
+}
+
+body{
+    background-color: var(--background-col);
+    color: #fff;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+    cursor: pointer;
+}
+
+
+/*Header XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+header{
+    margin: 30px 0;
+    width: 810px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active{
+    background-color: var(--primary-col);
+}
+
+.logo-link{
+    padding-top: 4px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin-left: 50px;
+    padding: 15px 35px;
+}
+
+.nav-item:hover{
+    background-color: var(--primary-col);
+    cursor: pointer;
+}
+
+.nav-item a{
+    color: #fff;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+/*Footer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+footer{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.year{
+    margin: 0 10px;
+}
+
+.personal,
+.credit{
+    text-decoration: none;
+    color: #fff;
+}
+
+.personal:hover,
+.credit:hover{
+    color: var(--primary-col);
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(../testAssets/alex_rainer-gN49R_5vhT8-unsplash.jpg)  no-repeat fixed;
+}
+
+header{
+    margin-top: 50px;
+    background-color: aqua;
+}
+
+header img{
+    align-self: center;
+}

@@ -1,11 +1,11 @@
 import _ from 'lodash';
 import './style.css';
-// import landingComponent from './home';
+//import landingComponent from './home';
 import contactComponent from './contact';
 
 function component() {
     
-   // return landingComponent();
+   //return landingComponent();
    return contactComponent();
 }
 
