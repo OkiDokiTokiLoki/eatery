@@ -1,7 +1,7 @@
 import './homeStyle.css';
 
 // headerComponent
-function headerComponent() {  
+function landingHeaderComponent() {  
 
     const headerContent = document.createElement('header');
 
@@ -43,7 +43,7 @@ function headerComponent() {
 }
 
 // mainComponent
-function mainComponent() {
+function LandingMainContentComponent() {
 
     const mainContent = document.createElement('div');
     mainContent.classList.add('main');
@@ -79,7 +79,7 @@ function mainComponent() {
 }
 
 // footerComponent
-function footerComponent() {
+function landingFooterComponent() {
 
     const footerContent = document.createElement('footer');
 
@@ -107,7 +107,7 @@ function footerComponent() {
    return footerContent;
 }
 
-function overlay(){
+function landingOverlayComponent(){
     const bgOverlay = document.createElement('div');
     bgOverlay.classList.add('overlay');
     
@@ -117,18 +117,18 @@ function overlay(){
 
 function landingComponent() {
 
-    const fullPage =   document.getElementById('content');
+    const landingPage =   document.getElementById('content');
 
-    const landingHeader = headerComponent();
-    const landingMain = mainComponent();
-    const landingFooter = footerComponent();
-    const landingOverlay = overlay();
+    const lanHeader = landingHeaderComponent();
+    const lanMain = LandingMainContentComponent();
+    const lanFooter = landingFooterComponent();
+    const lanOverlay = landingOverlayComponent();
     
 
-    fullPage.appendChild(landingHeader);
-    fullPage.appendChild(landingMain);
-    fullPage.appendChild(landingFooter);
-    fullPage.append(landingOverlay);
+    landingPage.appendChild(lanHeader);
+    landingPage.appendChild(lanMain);
+    landingPage.appendChild(lanFooter);
+    landingPage.append(lanOverlay);
 }
 
 export default landingComponent;

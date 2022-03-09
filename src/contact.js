@@ -1,7 +1,6 @@
 import './contactStyle.css';
 
-// headerComponent
-function contactHeader() {  
+function contactHeaderComponent() {  
 
     const headerContent = document.createElement('header');
 
@@ -42,16 +41,14 @@ function contactHeader() {
    return headerContent;
 }
 
-// h1
-function pageHead(){
+function contactH1Component(){
     const pageHeading = document.createElement('h1');
     pageHeading.innerText = 'Get in touch';
 
     return pageHeading;
 }
 
-// big section
-function contactBig() {
+function contactBigSecComponent() {
 
     const bigSection = document.createElement('section');
 
@@ -123,8 +120,7 @@ function contactBig() {
    return bigSection;
 }
 
-// small section
-function contactSmall() {
+function contactSmallSecComponent() {
 
     const smallSection = document.createElement('section');
 
@@ -174,8 +170,7 @@ function contactSmall() {
    return smallSection;
 }
 
-// footerComponent
-function conFooter() {
+function contactFooterComponent() {
 
     const footerContent = document.createElement('footer');
 
@@ -203,7 +198,7 @@ function conFooter() {
    return footerContent;
 }
 
-function overlay(){
+function contactOverlayComponent(){
     const bgOverlay = document.createElement('div');
     bgOverlay.classList.add('overlay');
     
@@ -214,12 +209,12 @@ function contactComponent() {
 
     const contactPage =   document.getElementById('content');
 
-    const conHeader = contactHeader();
-    const pageHeader = pageHead();
-    const conBig = contactBig();
-    const conSmall = contactSmall();
-    const conOverlay = overlay();
-    const conFoot = conFooter()
+    const conHeader = contactHeaderComponent();
+    const pageHeader = contactH1Component();
+    const conBig = contactBigSecComponent();
+    const conSmall = contactSmallSecComponent();
+    const conOverlay = contactOverlayComponent();
+    const conFoot = contactFooterComponent();
 
     contactPage.appendChild(conHeader);
     contactPage.appendChild(pageHeader);
