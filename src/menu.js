@@ -60,13 +60,18 @@ function menuMenuComponent() {
     foodDetailsL1.classList.add('food-details');
     foodItemL1.appendChild(foodDetailsL1);
 
-    const foodTitle1 = document.createElement('h3');
-    foodTitle1.innerText = 'Something Tasty'
-    foodDetailsL1.appendChild(foodTitle1);
+    const foodTitleL1 = document.createElement('h3');
+    foodTitleL1.innerText = 'Something Tasty'
+    foodDetailsL1.appendChild(foodTitleL1);
 
-    const foodDescription1 = document.createElement('p');
-    foodDescription1.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
-    foodDetailsL1.appendChild(foodDescription1);
+    const foodDescriptionL1 = document.createElement('p');
+    foodDescriptionL1.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsL1.appendChild(foodDescriptionL1);
+
+    const foodPriceL1 = document.createElement('p');
+    foodPriceL1.classList.add('price');
+    foodItemL1.appendChild(foodPriceL1);
+
 
     const foodItemL2 = document.createElement('div');
     foodItemL2.classList.add('food-item');
@@ -76,7 +81,18 @@ function menuMenuComponent() {
     foodDetailsL2.classList.add('food-details');
     foodItemL2.appendChild(foodDetailsL2);
 
-    
+    const foodTitleL2 = document.createElement('h3');
+    foodTitleL2.innerText = 'Something Tasty'
+    foodDetailsL2.appendChild(foodTitleL2);
+
+    const foodDescriptionL2 = document.createElement('p');
+    foodDescriptionL2.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsL2.appendChild(foodDescriptionL2);
+
+    const foodPriceL2 = document.createElement('p');
+    foodPriceL2.classList.add('price');
+    foodItemL2.appendChild(foodPriceL2);
+
 
     const foodItemL3 = document.createElement('div');
     foodItemL3.classList.add('food-item');
@@ -86,6 +102,17 @@ function menuMenuComponent() {
     foodDetailsL3.classList.add('food-details');
     foodItemL3.appendChild(foodDetailsL3);
 
+    const foodTitleL3= document.createElement('h3');
+    foodTitleL3.innerText = 'Something Tasty'
+    foodDetailsL3.appendChild(foodTitleL3);
+
+    const foodDescriptionL3 = document.createElement('p');
+    foodDescriptionL3.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsL3.appendChild(foodDescriptionL3);
+
+    const foodPriceL3 = document.createElement('p');
+    foodPriceL3.classList.add('price');
+    foodItemL3.appendChild(foodPriceL3);
 
 
     const foodItemL4 = document.createElement('div');
@@ -96,7 +123,17 @@ function menuMenuComponent() {
     foodDetailsL4.classList.add('food-details');
     foodItemL4.appendChild(foodDetailsL4);
 
+    const foodTitleL4 = document.createElement('h3');
+    foodTitleL4.innerText = 'Something Tasty'
+    foodDetailsL4.appendChild(foodTitleL4);
 
+    const foodDescriptionL4 = document.createElement('p');
+    foodDescriptionL4.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsL4.appendChild(foodDescriptionL4);
+
+    const foodPriceL4 = document.createElement('p');
+    foodPriceL4.classList.add('price');
+    foodItemL4.appendChild(foodPriceL4);
 
 
     const middleMenu = document.createElement('div');
@@ -113,6 +150,17 @@ function menuMenuComponent() {
     foodDetailsM1.classList.add('food-details');
     foodItemM1.appendChild(foodDetailsM1);
 
+    const foodTitleM1 = document.createElement('h3');
+    foodTitleM1.innerText = 'Something Tasty'
+    foodDetailsM1.appendChild(foodTitleM1);
+
+    const foodDescriptionM1 = document.createElement('p');
+    foodDescriptionM1.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsM1.appendChild(foodDescriptionM1);
+
+    const foodPriceM1 = document.createElement('p');
+    foodPriceM1.classList.add('price');
+    foodItemM1.appendChild(foodPriceM1);
 
 
     const foodItemM2 = document.createElement('div');
@@ -123,6 +171,17 @@ function menuMenuComponent() {
     foodDetailsM2.classList.add('food-details');
     foodItemM2.appendChild(foodDetailsM2);
 
+    const foodTitleM2 = document.createElement('h3');
+    foodTitleM2.innerText = 'Something Tasty'
+    foodDetailsM2.appendChild(foodTitleM2);
+
+    const foodDescriptionM2 = document.createElement('p');
+    foodDescriptionM2.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsM2.appendChild(foodDescriptionM2);
+
+    const foodPriceM2 = document.createElement('p');
+    foodPriceM2.classList.add('price');
+    foodItemM2.appendChild(foodPriceM2);
 
 
     const foodItemM3 = document.createElement('div');
@@ -133,6 +192,17 @@ function menuMenuComponent() {
     foodDetailsM3.classList.add('food-details');
     foodItemM3.appendChild(foodDetailsM3);
 
+    const foodTitleM3 = document.createElement('h3');
+    foodTitleM3.innerText = 'Something Tasty'
+    foodDetailsM3.appendChild(foodTitleM3);
+
+    const foodDescriptionM3 = document.createElement('p');
+    foodDescriptionM3.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsM3.appendChild(foodDescriptionM3);
+
+    const foodPriceM3 = document.createElement('p');
+    foodPriceM3.classList.add('price');
+    foodItemM3.appendChild(foodPriceM3);
 
 
     const foodItemM4 = document.createElement('div');
@@ -143,6 +213,17 @@ function menuMenuComponent() {
     foodDetailsM4.classList.add('food-details');
     foodItemM4.appendChild(foodDetailsM4);
 
+    const foodTitleM4 = document.createElement('h3');
+    foodTitleM4.innerText = 'Something Tasty'
+    foodDetailsM4.appendChild(foodTitleM4);
+
+    const foodDescriptionM4 = document.createElement('p');
+    foodDescriptionM4.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsM4.appendChild(foodDescriptionM4);
+
+    const foodPriceM4 = document.createElement('p');
+    foodPriceM4.classList.add('price');
+    foodItemM4.appendChild(foodPriceM4);
 
 
     const rightMenu = document.createElement('div');
@@ -159,6 +240,17 @@ function menuMenuComponent() {
     foodDetailsR1.classList.add('food-details');
     foodItemR1.appendChild(foodDetailsR1);
 
+    const foodTitleR1 = document.createElement('h3');
+    foodTitleR1.innerText = 'Something Tasty'
+    foodDetailsR1.appendChild(foodTitleR1);
+
+    const foodDescriptionR1 = document.createElement('p');
+    foodDescriptionR1.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsR1.appendChild(foodDescriptionR1);
+
+    const foodPriceR1 = document.createElement('p');
+    foodPriceR1.classList.add('price');
+    foodItemR1.appendChild(foodPriceR1);
 
 
     const foodItemR2 = document.createElement('div');
@@ -169,6 +261,17 @@ function menuMenuComponent() {
     foodDetailsR2.classList.add('food-details');
     foodItemR2.appendChild(foodDetailsR2);
 
+    const foodTitleR2 = document.createElement('h3');
+    foodTitleR2.innerText = 'Something Tasty'
+    foodDetailsR2.appendChild(foodTitleR2);
+
+    const foodDescriptionR2 = document.createElement('p');
+    foodDescriptionR2.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsR2.appendChild(foodDescriptionR2);
+
+    const foodPriceR2 = document.createElement('p');
+    foodPriceR2.classList.add('price');
+    foodItemR2.appendChild(foodPriceR2);
 
 
     const foodItemR3 = document.createElement('div');
@@ -179,6 +282,17 @@ function menuMenuComponent() {
     foodDetailsR3.classList.add('food-details');
     foodItemR3.appendChild(foodDetailsR3);
 
+    const foodTitleR3 = document.createElement('h3');
+    foodTitleR3.innerText = 'Something Tasty'
+    foodDetailsR3.appendChild(foodTitleR3);
+
+    const foodDescriptionR3 = document.createElement('p');
+    foodDescriptionR3.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsR3.appendChild(foodDescriptionR3);
+
+    const foodPriceR3 = document.createElement('p');
+    foodPriceR3.classList.add('price');
+    foodItemR3.appendChild(foodPriceR3);
 
 
     const foodItemR4 = document.createElement('div');
@@ -189,11 +303,17 @@ function menuMenuComponent() {
     foodDetailsR4.classList.add('food-details');
     foodItemR4.appendChild(foodDetailsR4);
 
+    const foodTitleR4 = document.createElement('h3');
+    foodTitleR4.innerText = 'Something Tasty'
+    foodDetailsR4.appendChild(foodTitleR4);
 
+    const foodDescriptionR4 = document.createElement('p');
+    foodDescriptionR4.innerText = "The best thing you've tasted in a while. 10/10 recommendation.";
+    foodDetailsR4.appendChild(foodDescriptionR4);
 
-
-
-    
+    const foodPriceR4 = document.createElement('p');
+    foodPriceR4.classList.add('price');
+    foodItemR4.appendChild(foodPriceR4);  
     
    return menuDiv;
 }
