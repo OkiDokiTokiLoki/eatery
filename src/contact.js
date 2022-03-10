@@ -113,7 +113,7 @@ function contactBigSecComponent() {
     listItem3.appendChild(listLabelMessage);
 
     const listInputMessage = document.createElement('textarea');     
-    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "40", "rows": "8", "placeholder": "Any questions or suggestions?"});
+    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "35", "rows": "5", "placeholder": "Any questions or suggestions?"});
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 

@@ -1,27 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
-
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-    font-family: 'Smooch Sans', sans-serif;
-    letter-spacing: 3px;
-}
-
 body{
     background: url(../testAssets/ferks-guare-burger.jpg) no-repeat fixed center;
-    color: #fff;
     padding-left: 5%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     height: 98vh;
-}
-
-ul{
-    list-style: none;
 }
 
 header{
@@ -35,27 +19,6 @@ header{
 
 .logo-link{
     padding-top: 4px;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-item{
-    margin-left: 50px;
-    padding: 15px 35px;
-}
-
-.nav-item:hover{
-    background-color: var(--primary-col);
-    cursor: pointer;
-}
-
-.nav-item a{
-    color: #fff;
-    font-size: 35px;
-    text-decoration: none;
 }
 
 main{
@@ -81,35 +44,4 @@ h3{
 
 .details > p{
     margin-bottom: -10px;
-}
-
-
-footer{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer p{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.year{
-    margin: 0 10px;
-}
-
-.personal,
-.credit{
-    text-decoration: none;
-    color: #fff;
-}
-
-.personal:hover,
-.credit:hover{
-    color: var(--primary-col);
 }

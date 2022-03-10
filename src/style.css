@@ -38,6 +38,34 @@ ul{
     cursor: pointer;
 }
 
+.active,
+.active > .nav-link{
+    cursor: default !important;
+    pointer-events: none;
+    background-color: var(--primary-col);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin-left: 50px;
+    padding: 10px 35px;
+}
+
+.nav-item:hover{
+    background-color: var(--primary-col);
+    cursor: pointer;
+}
+
+.nav-item a{
+    color: #fff;
+    font-size: 35px;
+    text-decoration: none;
+}
+
 footer{
     position: absolute;
     bottom: 5%;

@@ -7,10 +7,10 @@
 
 body{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
-    height: 98vh;
+    height: 95vh;
     background: url(../testAssets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed;
 }
 
@@ -21,35 +21,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.active{
-    background-color: var(--primary-col);
-}
-
-.logo-link{
-    padding-top: 4px;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-item{
-    margin-left: 50px;
-    padding: 15px 35px;
-}
-
-.nav-item:hover{
-    background-color: var(--primary-col);
-    cursor: pointer;
-}
-
-.nav-item a{
-    color: #fff;
-    font-size: 35px;
-    text-decoration: none;
 }
 
 h1{
@@ -135,4 +106,3 @@ textarea{
 .socials button:nth-child(3):hover{
     background-color: hsl(204, 79%, 45%);
 }
-
