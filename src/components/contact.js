@@ -11,13 +11,6 @@ function contactBigSecComponent() {
 
     const bigSection = document.createElement('section');
 
-    // helper function to set multiple attributes on an element
-    function setAttributes(el, attrs) {
-        for(let key in attrs) {
-          el.setAttribute(key, attrs[key]);
-        }
-    }
-
     const mapImg = document.createElement('img');
     mapImg.setAttribute('src', 'https://via.placeholder.com/400');
     bigSection.appendChild(mapImg);
@@ -46,7 +39,9 @@ function contactBigSecComponent() {
     listItem1.appendChild(listLabelName);
 
     const listInputName = document.createElement('input');
-    setAttributes(listInputName, {"name": "name", "id": "contactName", "placeholder": "Gordon Ramsay"});
+    listInputName.name = 'name';
+    listInputName.id = 'contactName';
+    listInputName.placeholder = 'Gordon Ramsay';
     listInputName.required = true;
     listItem1.appendChild(listInputName);
 
@@ -59,7 +54,10 @@ function contactBigSecComponent() {
     listItem2.appendChild(listLabelNumber);
 
     const listInputNumber = document.createElement('input');
-    setAttributes(listInputNumber, {"type": "number", "name": "number", "id": "contactNumber", "placeholder": "012 345 6789"});
+    listInputNumber.type = 'number';
+    listInputName.name = 'number';
+    listInputNumber.id = 'contactNumber';
+    listInputNumber.placeholder = '123 456 789';
     listInputNumber.required = true;
     listItem2.appendChild(listInputNumber);
 
@@ -71,8 +69,12 @@ function contactBigSecComponent() {
     listLabelMessage.innerText = 'Message';
     listItem3.appendChild(listLabelMessage);
 
-    const listInputMessage = document.createElement('textarea');     
-    setAttributes(listInputMessage, {"name": "message", "id": "contactMessage", "cols": "35", "rows": "5", "placeholder": "Any questions or suggestions?"});
+    const listInputMessage = document.createElement('textarea');  
+    listInputMessage.name = 'message';
+    listInputMessage.id = 'contactMessage';
+    listInputMessage.cols = '35';
+    listInputMessage.rows = '5';   
+    listInputMessage.placeholder = 'Any questions or suggestions?';
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 
@@ -82,12 +84,6 @@ function contactBigSecComponent() {
 function contactSmallSecComponent() {
 
     const smallSection = document.createElement('section');
-
-    function setAttributes(el, attrs) {
-        for(let key in attrs) {
-          el.setAttribute(key, attrs[key]);
-        }
-    }
 
     const contactDiv = document.createElement('div');
     contactDiv.classList.add('contact');
@@ -109,21 +105,24 @@ function contactSmallSecComponent() {
     socialsDiv.appendChild(fbBtn);
 
     const fbImg = document.createElement('img');      
-    setAttributes(fbImg, {"src": "#", "alt": "facebook"});
+    fbImg.src = '#';
+    fbImg.alt = 'facebook';
     fbBtn.appendChild(fbImg);
 
     const igBtn = document.createElement('button');
     socialsDiv.appendChild(igBtn);
 
     const igImg = document.createElement('img');
-    setAttributes(igImg, {"src": "#", "alt": "instagram"});
+    igImg.src = '#';
+    igImg.alt = 'instagram';
     igBtn.appendChild(igImg);
 
     const twBtn = document.createElement('button');
     socialsDiv.appendChild(twBtn);
 
     const twImg = document.createElement('img');
-    setAttributes(twImg, {"src": "#", "alt": "twitter"});
+    twImg.src = '#';
+    twImg.alt = 'twitter';
     twBtn.appendChild(twImg);
     
    return smallSection;

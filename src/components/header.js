@@ -22,7 +22,7 @@ function headerComponent() {
 
     const navLink1 = document.createElement('a');
     navLink1.classList.add('nav-link');
-    navLink1.setAttribute('href', '#');
+    navLink1.href = '#';
     navLink1.innerText = 'Menu';
     navItem1.appendChild(navLink1);
 
@@ -32,7 +32,7 @@ function headerComponent() {
 
     const navLink2 = document.createElement('a');
     navLink2.classList.add('nav-link');
-    navLink2.setAttribute('href', '#');
+    navLink2.href = '#';
     navLink2.innerText = 'Contact';
     navItem2.appendChild(navLink2);
     
