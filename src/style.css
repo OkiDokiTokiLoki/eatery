@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 
 *,
 *::before,
 *::after{
     box-sizing: border-box;
-    font-family: 'Smooch Sans', sans-serif;
-    letter-spacing: 3px;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
 }
 
 :root{
