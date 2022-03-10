@@ -1,45 +1,4 @@
-import './menuStyle.css';
-
-function menuHeaderComponent() {  
-
-    const menuHeader = document.createElement('header');
-
-    const logoLink = document.createElement('a');
-    logoLink.classList.add('logo-link');
-    logoLink.setAttribute('href', '../dist/');
-    menuHeader.appendChild(logoLink);
-
-    const logoImg = document.createElement('img');
-    logoImg.classList.add('logo');
-    logoImg.setAttribute('src', 'https://via.placeholder.com/300x80');
-    logoLink.appendChild(logoImg);
-
-    const navbar = document.createElement('ul');
-    navbar.classList.add('navbar');
-    menuHeader.appendChild(navbar);
-
-    const navItem1 = document.createElement('li');
-    navItem1.classList.add('nav-item', 'active');
-    navbar.appendChild(navItem1);
-
-    const navLink1 = document.createElement('a');
-    navLink1.classList.add('nav-link');
-    navLink1.setAttribute('href', '#');
-    navLink1.innerText = 'Menu';
-    navItem1.appendChild(navLink1);
-
-    const navItem2 = document.createElement('li');
-    navItem2.classList.add('nav-item');
-    navbar.appendChild(navItem2);
-
-    const navLink2 = document.createElement('a');
-    navLink2.classList.add('nav-link');
-    navLink2.setAttribute('href', '#');
-    navLink2.innerText = 'Contact';
-    navItem2.appendChild(navLink2);
-    
-   return menuHeader;
-}
+import '../styles/menuStyle.css';
 
 function menuMenuComponent() {
 
@@ -328,54 +287,11 @@ function menuMenuComponent() {
    return menuDiv;
 }
 
-function menuFooterComponent() {
-
-    const footerContent = document.createElement('footer');
-
-    const gitP = document.createElement('p');
-    gitP.innerText = '©';
-    footerContent.appendChild(gitP);
-
-    const dateScript = document.createElement('p');
-    dateScript.classList.add('year');
-    dateScript.innerHTML = new Date().getFullYear();
-    gitP.appendChild(dateScript);
-
-    const gitLink = document.createElement('a');
-    gitLink.classList.add('personal');
-    gitLink.innerText = 'OkiDokiTokiLoki';
-    gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
-    gitP.appendChild(gitLink);
-
-    const creditLink = document.createElement('a');
-    creditLink.classList.add('credit');
-    creditLink.innerText = 'image credit: Alex Rainer [unsplash]';
-    creditLink.setAttribute('href', 'https://unsplash.com/photos/gN49R_5vhT8');
-    footerContent.appendChild(creditLink);
-    
-   return footerContent;
-}
-
-function menuOverlayComponent(){
-    const bgOverlay = document.createElement('div');
-    bgOverlay.classList.add('overlay');
-    
-    return bgOverlay;
-}
-
 function menuPageComponent() {
 
-    const menuPage =   document.getElementById('content');
-
-    const menHeader = menuHeaderComponent();
+    const content =   document.getElementById('content');
     const menMenu = menuMenuComponent();
-    const menFooter = menuFooterComponent();
-    const menOverlay = menuOverlayComponent();
-
-    menuPage.appendChild(menHeader);
-    menuPage.appendChild(menMenu);
-    menuPage.appendChild(menFooter);
-    menuPage.appendChild(menOverlay);
+    content.appendChild(menMenu);
 }
 
 export default menuPageComponent;

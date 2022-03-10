@@ -1,14 +1,43 @@
-import _ from 'lodash';
+import _, { over } from 'lodash';
 import './style.css';
-// import landingComponent from './home';
-import contactComponent from './contact';
-// import menuPageComponent from './menu';
+import './styles/homeStyle.css';
+import firstLoad from './functions/initial';
+import landingComponent from './components/home';
+import menuPageComponent from './components/menu';
+import contactComponent from './components/contact';
+import render from './functions/render';
 
-function component() {
-    
-   // return landingComponent();
-   return contactComponent();
-   // return menuPageComponent();
-}
+firstLoad();
 
-document.body.appendChild(component());
+const homeBtn = document.querySelector('.logo-link');
+const menuBtn = document.querySelector('.menuBtn');
+const contactBtn = document.querySelector('.contactBtn');
+
+homeBtn.addEventListener('click', () => {
+   render();
+   landingComponent();
+});
+
+menuBtn.addEventListener('click', () => {
+   render();
+   menuPageComponent();
+});
+
+contactBtn.addEventListener('click', () => {
+   render();
+   contactComponent();
+});
+
+// function component() {
+
+//    const pHeader = header();
+//    const pOverlay = overlay();
+//    const landingPage = landingComponent();
+//    const menuPage = menuPageComponent();
+//    const contactPage = contactComponent();
+//    const pFooter = footer(); 
+
+//    return pHeader && menuPage && pFooter;
+// }
+
+// document.body.appendChild(component());

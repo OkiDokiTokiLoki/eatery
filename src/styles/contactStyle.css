@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     height: 95vh;
-    background: url(../testAssets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed;
+    background: url(../assets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed;
 }
 
 header{
