@@ -6,15 +6,10 @@ import overlay from '../components/overlay';
 function firstLoad(){
     const content = document.querySelector("#content");
     
-    const pageHeader = header();
-    const landing = landingComponent();
-    const pageFooter = footer();
-    const pageOverlay = overlay();
-    
-    content.appendChild(pageHeader);
-    content.appendChild(landing);
-    content.appendChild(pageFooter);
-    content.appendChild(pageOverlay);
+    content.appendChild(header());
+    content.appendChild(landingComponent());
+    content.appendChild(footer());
+    content.appendChild(overlay());
 }
 
 export default firstLoad;

@@ -1,11 +1,11 @@
 import '../styles/contactStyle.css';
 
-function contactH1Component(){
-    const pageHeading = document.createElement('h1');
-    pageHeading.innerText = 'Get in touch';
+// function contactH1Component(){
+//     const pageHeading = document.createElement('h1');
+//     pageHeading.innerText = 'Get in touch';
 
-    return pageHeading;
-}
+//     return pageHeading;
+// }
 
 function contactBigSecComponent() {
 
@@ -20,7 +20,7 @@ function contactBigSecComponent() {
     bigSection.appendChild(formDiv);
 
     const heading2 = document.createElement('h2');
-    heading2.innerText = "We'd love to hear from you";
+    heading2.textContent = "We'd love to hear from you";
     formDiv.appendChild(heading2);
 
     const form = document.createElement('form');
@@ -35,7 +35,7 @@ function contactBigSecComponent() {
 
     const listLabelName = document.createElement('label');
     listLabelName.setAttribute('for', 'contactName');
-    listLabelName.innerText = 'Name';
+    listLabelName.textContent = 'Name';
     listItem1.appendChild(listLabelName);
 
     const listInputName = document.createElement('input');
@@ -50,7 +50,7 @@ function contactBigSecComponent() {
 
     const listLabelNumber = document.createElement('label');
     listLabelNumber.setAttribute('for', 'contactNumber');
-    listLabelNumber.innerText = 'Number';
+    listLabelNumber.textContent = 'Number';
     listItem2.appendChild(listLabelNumber);
 
     const listInputNumber = document.createElement('input');
@@ -66,7 +66,7 @@ function contactBigSecComponent() {
 
     const listLabelMessage = document.createElement('label');
     listLabelMessage.setAttribute('for', 'contactMessage');
-    listLabelMessage.innerText = 'Message';
+    listLabelMessage.textContent = 'Message';
     listItem3.appendChild(listLabelMessage);
 
     const listInputMessage = document.createElement('textarea');  
@@ -90,11 +90,11 @@ function contactSmallSecComponent() {
     smallSection.appendChild(contactDiv);
 
     const contactAddress = document.createElement('p');
-    contactAddress.innerText = '123 Real Address, Fictional Town';
+    contactAddress.textContent = '123 Real Address, Fictional Town';
     contactDiv.appendChild(contactAddress);
 
     const contactDelivery = document.createElement('p');
-    contactDelivery.innerText = 'Delivery: 123 123 1234';
+    contactDelivery.textContent = 'Delivery: 123 123 1234';
     contactDiv.appendChild(contactDelivery);
 
     const socialsDiv = document.createElement('div');
@@ -130,15 +130,11 @@ function contactSmallSecComponent() {
 
 function contactComponent() {
 
-    const contactPage =   document.getElementById('content');
+    const content =   document.getElementById('content');
 
-    const pageHeader = contactH1Component();
-    const conBig = contactBigSecComponent();
-    const conSmall = contactSmallSecComponent();
-
-    contactPage.appendChild(pageHeader);
-    contactPage.appendChild(conBig);
-    contactPage.appendChild(conSmall);
+    // content.appendChild(contactH1Component());
+    content.appendChild(contactBigSecComponent());
+    content.appendChild(contactSmallSecComponent());
 }
 
 export default contactComponent;

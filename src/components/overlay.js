@@ -8,8 +8,7 @@ function overlayComponent(){
 function overlay(){
 
     const content = document.getElementById('content');
-    const pageOverlay = overlayComponent();
-    content.appendChild(pageOverlay);
+    content.appendChild(overlayComponent());
 }
 
 export default overlay;
