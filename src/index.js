@@ -52,6 +52,7 @@ function headerComponent() {
    header.appendChild(homeButton);
    homeButton.addEventListener("click", (e) => {
       if (e.target.classList.contains("active")) return;
+      render();
       setActiveButton(homeButton);
       landingComponent();
    });
@@ -81,6 +82,7 @@ function headerComponent() {
    menuButton.addEventListener("click", (e) => {
       if (e.target.classList.contains("active")) return;
       setActiveButton(menuButton);
+      render();
       menuPageComponent();
    });
 
@@ -95,10 +97,19 @@ function headerComponent() {
    contactButton.addEventListener("click", (e) => {
       if (e.target.classList.contains("active")) return;
       setActiveButton(contactButton);
+      render();
       contactComponent();
    });
    
    return header;
+}
+
+function render(){
+   const content = document.querySelector('#content');
+   content.style = "";
+   while(content.children.length > 1){
+      content.children.remove();
+   }
 }
 
 function setActiveButton(button) {
@@ -114,10 +125,6 @@ function setActiveButton(button) {
 }
 
 function header(){
-
-   // setActiveButton(document.querySelector(".nav-link"));
-   // landingComponent();
-
    const content = document.getElementById('content');
    content.appendChild(headerComponent());
 }
@@ -132,8 +139,8 @@ function component() {
    const pHeader = header();
    const pOverlay = overlay();
    const landingPage = landingComponent();
-   const menuPage = menuPageComponent();
-   const contactPage = contactComponent();
+   // const menuPage = menuPageComponent();
+   // const contactPage = contactComponent();
    const pFooter = footer(); 
 
    return pHeader && pOverlay && landingPage && pFooter;

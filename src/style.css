@@ -24,6 +24,19 @@ ul{
     list-style: none;
 }
 
+.logo-link{
+    background-color: var(--primary-col);
+}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 .overlay {
     position: fixed;
     display: block;
@@ -60,10 +73,14 @@ ul{
     cursor: pointer;
 }
 
-.nav-item a{
+.nav-link{
     color: #fff;
     font-size: 35px;
     text-decoration: none;
+}
+
+.navBtn{
+    padding: 10px 35px;
 }
 
 footer{
