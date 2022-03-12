@@ -1,4 +1,7 @@
 import '../styles/menuStyle.css';
+import header from '../index';
+import overlay from './overlay';
+import footer from './footer';
 
 function createMenu() {
     const menu = document.createElement('div');
@@ -133,6 +136,14 @@ function createMenuItem(name, description, price) {
 
 
 function menuPageComponent() { 
+
+    // const content = document.getElementById('content');
+
+    // content.textContent = '';
+    // content.appendChild(header());
+    // content.appendChild(overlay());
+    // content.appendChild(createMenu());
+    // content.appendChild(footer());
 
     const content =   document.getElementById('content');
     content.appendChild(createMenu());

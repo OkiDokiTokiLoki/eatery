@@ -4,6 +4,8 @@ import contactComponent from '../components/contact';
 
 function headerComponent() {  
 
+    const content = document.querySelector('#content');
+
     const header = document.createElement('header');
 
     const homeButton = document.createElement("button");
@@ -13,18 +15,9 @@ function headerComponent() {
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
+        content.style = "";
         landingComponent();
     });
-
-    // const logoLink = document.createElement('a');
-    // logoLink.classList.add('logo-link');
-    // logoLink.setAttribute('href', '../dist/');
-    // header.appendChild(logoLink);
-
-    // const logoImg = document.createElement('img');
-    // logoImg.classList.add('logo');
-    // logoImg.setAttribute('src', 'https://via.placeholder.com/300x80');
-    // logoLink.appendChild(logoImg);
 
     const navbar = document.createElement('ul');
     navbar.classList.add('navbar');
@@ -41,6 +34,7 @@ function headerComponent() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
+        content.style = "";
         menuPageComponent();
     });
 
@@ -55,10 +49,19 @@ function headerComponent() {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
+        content.style = "";
         contactComponent();
     });
     
    return header;
+}
+
+function render(){
+   const content = document.querySelector('#content');
+   content.style = "";
+//    while(content.children.length > 1){
+//       content.children.remove();
+//    }
 }
 
 function setActiveButton(button) {

@@ -24,9 +24,9 @@ ul{
     list-style: none;
 }
 
-.logo-link{
+/* .logo-link{
     background-color: var(--primary-col);
-}
+} */
 
 button{
     background-color: transparent;
@@ -51,8 +51,7 @@ button:hover{
     cursor: pointer;
 }
 
-.active,
-.active > .nav-link{
+.active{
     cursor: default !important;
     pointer-events: none;
     background-color: var(--primary-col);

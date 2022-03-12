@@ -1,4 +1,7 @@
 import '../styles/homeStyle.css';
+import header from '../index';
+import overlay from './overlay';
+import footer from './footer';
 
 function LandingMainContentComponent() {
 
