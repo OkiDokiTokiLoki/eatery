@@ -24,7 +24,7 @@ function component() {
    // const contactPage = contactComponent();
    const pFooter = footer(); 
 
-   return pHeader && pOverlay && landingPage && pFooter;
+   return pHeader && pOverlay && pFooter;
 }
 
 document.body.appendChild(component());
