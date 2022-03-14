@@ -130,11 +130,16 @@ function contactSmallSecComponent() {
 
 function contactComponent() {
 
-    const content =   document.getElementById('content');
+    // const content =   document.getElementById('content');
 
-    // content.appendChild(contactH1Component());
-    content.appendChild(contactBigSecComponent());
-    content.appendChild(contactSmallSecComponent());
+    // // content.appendChild(contactH1Component());
+    // content.appendChild(contactBigSecComponent());
+    // content.appendChild(contactSmallSecComponent());
+
+    const main = document.querySelector(".mainContent");
+    main.textContent = "";
+    main.appendChild(contactBigSecComponent());
+    main.appendChild(contactSmallSecComponent());
 }
 
 export default contactComponent;

@@ -138,8 +138,9 @@ function createMenuItem(name, description, price) {
 
 function menuPageComponent() { 
 
-    const content =   document.getElementById('content');
-    content.appendChild(createMenu());
+    const main = document.querySelector(".mainContent");
+    main.textContent = "";
+    main.appendChild(createMenu());
 }
 
 export default menuPageComponent;

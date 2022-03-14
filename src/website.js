@@ -14,7 +14,7 @@ function headerComponent() {
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
-        render();
+        //render();
         landingComponent();
     });
 
@@ -33,7 +33,7 @@ function headerComponent() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
-        render();
+        //render();
         menuPageComponent();
     });
 
@@ -48,20 +48,20 @@ function headerComponent() {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
-        render();
+        //render();
         contactComponent();
     });
     
    return header;
 }
 
-function render(){
-    const content = document.querySelector('#content');
-    content.style = "";
-    while(content.children.length > 1){
-       content.children.remove();
-    }
-}
+// function render(){
+//     const content = document.querySelector('#content');
+//     content.style = "";
+//     while(content.children.length > 1){
+//        content.children.remove();
+//     }
+// }
 
 function setActiveButton(button) {
     const navButtons = document.querySelectorAll(".nav-link");
@@ -77,7 +77,8 @@ function setActiveButton(button) {
 
 function injectContent() {
     const main = document.createElement("main");
-    main.classList.add("content");
+    main.classList.add("mainContent");
+    main.setAttribute("id", "mainContent");
     return main;
 }
 
