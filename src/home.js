@@ -45,6 +45,7 @@ function landingComponent() {
 }
 
 export default landingComponent; */
+import './styles/homeStyle.css';
 
 function LandingMainContentComponent() {
 
@@ -79,4 +80,10 @@ function LandingMainContentComponent() {
     details.appendChild(detailsP2);
     
    return mainContent;
+}
+
+function landingComponent() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(LandingMainContentComponent());
 }

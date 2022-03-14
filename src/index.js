@@ -1,4 +1,4 @@
-// import _, { over } from 'lodash';
+import _, { over } from 'lodash';
 // import './style.css';
 // import menuPageComponent from './components/menu';
 // import contactComponent from './components/contact';

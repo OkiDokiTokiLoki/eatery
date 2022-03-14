@@ -1,6 +1,7 @@
 import landingComponent from "./home";
 import menuPageComponent from "./menu";
 import contactComponent from "./contact";
+import './style.css';
 
 function headerComponent() {  
 
