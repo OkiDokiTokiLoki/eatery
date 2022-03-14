@@ -1,10 +1,8 @@
-import landingComponent from '../components/home';
-import menuPageComponent from '../components/menu';
-import contactComponent from '../components/contact';
+import landingComponent from "./home";
+import menuPageComponent from "./menu";
+import contactComponent from "./contact";
 
 function headerComponent() {  
-
-    const content = document.querySelector('#content');
 
     const header = document.createElement('header');
 
@@ -15,7 +13,7 @@ function headerComponent() {
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
-        content.style = "";
+        render();
         landingComponent();
     });
 
@@ -34,7 +32,7 @@ function headerComponent() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
-        content.style = "";
+        render();
         menuPageComponent();
     });
 
@@ -49,7 +47,7 @@ function headerComponent() {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
-        content.style = "";
+        render();
         contactComponent();
     });
     
@@ -57,11 +55,11 @@ function headerComponent() {
 }
 
 function render(){
-   const content = document.querySelector('#content');
-   content.style = "";
-//    while(content.children.length > 1){
-//       content.children.remove();
-//    }
+    const content = document.querySelector('#content');
+    content.style = "";
+    while(content.children.length > 1){
+       content.children.remove();
+    }
 }
 
 function setActiveButton(button) {
@@ -76,13 +74,49 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
-function header(){
-
-    // setActiveButton(document.querySelector(".nav-link"));
-    // landingComponent();
-
-    const content = document.getElementById('content');
-    content.appendChild(headerComponent());
+function injectContent() {
+    const main = document.createElement("main");
+    main.classList.add("content");
+    return main;
 }
 
-export default header;
+function footerComponent() {
+
+    const footer = document.createElement('footer');
+
+    const gitP = document.createElement('p');
+    gitP.textContent = '©';
+    footer.appendChild(gitP);
+
+    const dateScript = document.createElement('p');
+    dateScript.classList.add('year');
+    dateScript.textContent = `${new Date().getFullYear()}`;
+    gitP.appendChild(dateScript);
+
+    const gitLink = document.createElement('a');
+    gitLink.classList.add('personal');
+    gitLink.textContent = 'OkiDokiTokiLoki';
+    gitLink.setAttribute('href', 'https://github.com/OkiDokiTokiLoki/eatery');
+    gitP.appendChild(gitLink);
+
+    const creditLink = document.createElement('a');
+    creditLink.classList.add('credit');
+    creditLink.textContent = 'image credit: Alex Rainer [unsplash]';
+    creditLink.setAttribute('href', 'https://unsplash.com/photos/gN49R_5vhT8');
+    footer.appendChild(creditLink);
+    
+   return footer;
+}
+
+function initial() {
+    const content = document.getElementById("content");
+
+    content.appendChild(headerComponent());
+    content.appendChild(injectContent());
+    content.appendChild(footerComponent());
+
+    setActiveButton(document.querySelector(".nav-link"));
+    landingComponent();
+}
+
+export default initial;

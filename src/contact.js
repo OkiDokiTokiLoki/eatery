@@ -1,4 +1,4 @@
-import '../styles/contactStyle.css';
+import './styles/contactStyle.css';
 
 // function contactH1Component(){
 //     const pageHeading = document.createElement('h1');
