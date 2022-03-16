@@ -7,6 +7,7 @@ function homeComponent() {
 
     const heading1 = document.createElement('h1');
     heading1.textContent = 'Welcome to ';
+    heading1.classList.add('heading-span');
     main.appendChild(heading1);
 
     const hBreak = document.createElement('br');

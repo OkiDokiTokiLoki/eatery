@@ -27,7 +27,7 @@ function headerComponent() {
     navbar.appendChild(navItem1);
 
     const menuButton = document.createElement("button");
-    menuButton.classList.add("nav-link");
+    menuButton.classList.add("nav-link", 'nav-btn');
     menuButton.textContent = "Menu";
     navItem1.appendChild(menuButton);
     menuButton.addEventListener("click", (e) => {
@@ -41,7 +41,7 @@ function headerComponent() {
     navbar.appendChild(navItem2);
 
     const contactButton = document.createElement("button");
-    contactButton.classList.add("nav-link");
+    contactButton.classList.add("nav-link", 'nav-btn');
     contactButton.textContent = "Contact";
     navItem2.appendChild(contactButton);
     contactButton.addEventListener("click", (e) => {

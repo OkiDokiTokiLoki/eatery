@@ -8,22 +8,6 @@ body{
     height: 95vh;
 }
 
-header{
-    position: absolute;
-    top: 40px;
-    left: 35%;
-    margin: 50px 0 100px 0;
-    width: 50%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-link{
-    padding-top: 4px;
-}
-
 .main{
     width: 50%;
     height: 60%;
@@ -36,11 +20,17 @@ h1 span{
     margin-top: -10px;
 }
 
+.heading-span{
+    font-size: 60px;
+}
+
 h3{
     margin-top: -30px;
 }
 
 .details{
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     font-size: 22px;
 }

@@ -10,6 +10,7 @@ import './styles/contactStyle.css';
 function bigSectionComponent() {
 
     const bigSection = document.createElement('section');
+    bigSection.classList.add('top-contact-section');
 
     const mapImg = document.createElement('img');
     mapImg.setAttribute('src', 'https://via.placeholder.com/400');

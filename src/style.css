@@ -51,10 +51,21 @@ button:hover{
     cursor: pointer;
 }
 
-.active{
+.active.nav-btn{
     cursor: default !important;
     pointer-events: none;
     background-color: var(--primary-col);
+}
+
+header{
+    position: absolute;
+    top: 40px;
+    margin: 50px 0 100px 0;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar{
