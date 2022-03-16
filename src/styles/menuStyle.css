@@ -15,11 +15,14 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 95vh;
 }
 
 header{
-    margin: 50px 0 0 0;
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    margin: 50px 0 100px 0;
     width: 810px;
     height: 80px;
     display: flex;
@@ -31,8 +34,9 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin-bottom: 150px;
+    margin: auto;
 }
 
 .menu{
