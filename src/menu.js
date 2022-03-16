@@ -1,8 +1,4 @@
 import './styles/menuStyle.css';
-import header from './index';
-import overlay from './overlay';
-import footer from './footer';
-import { over } from 'lodash';
 
 function createMenu() {
     const menu = document.createElement('div');

@@ -7,8 +7,8 @@ import './styles/contactStyle.css';
 //     return pageHeading;
 // }
 
-function loadContact() {
-    /* Big top section */
+function bigSectionComponent() {
+
     const bigSection = document.createElement('section');
 
     const mapImg = document.createElement('img');
@@ -125,17 +125,61 @@ function loadContact() {
    return bigSection /*&& smallSection*/;
 }
 
+function smallSectionComponent() {
+
+    const smallSection = document.createElement('section');
+
+    const contactDiv = document.createElement('div');
+    contactDiv.classList.add('contact');
+    smallSection.appendChild(contactDiv);
+
+    const contactAddress = document.createElement('p');
+    contactAddress.textContent = '123 Real Address, Fictional Town';
+    contactDiv.appendChild(contactAddress);
+
+    const contactDelivery = document.createElement('p');
+    contactDelivery.textContent = 'Delivery: 123 123 1234';
+    contactDiv.appendChild(contactDelivery);
+
+    const socialsDiv = document.createElement('div');
+    socialsDiv.classList.add('socials');
+    smallSection.appendChild(socialsDiv);
+
+    const fbBtn = document.createElement('button');
+    socialsDiv.appendChild(fbBtn);
+
+    const fbImg = document.createElement('img');      
+    fbImg.src = '#';
+    fbImg.alt = 'facebook';
+    fbBtn.appendChild(fbImg);
+
+    const igBtn = document.createElement('button');
+    socialsDiv.appendChild(igBtn);
+
+    const igImg = document.createElement('img');
+    igImg.src = '#';
+    igImg.alt = 'instagram';
+    igBtn.appendChild(igImg);
+
+    const twBtn = document.createElement('button');
+    socialsDiv.appendChild(twBtn);
+
+    const twImg = document.createElement('img');
+    twImg.src = '#';
+    twImg.alt = 'twitter';
+    twBtn.appendChild(twImg);
+
+   return smallSection;
+}
+
+
+
 function contactComponent() {
-
-    // const content =   document.getElementById('content');
-
-    // // content.appendChild(contactH1Component());
-    // content.appendChild(contactBigSecComponent());
-    // content.appendChild(contactSmallSecComponent());
 
     const main = document.querySelector(".mainContent");
     main.textContent = "";
-    main.appendChild(loadContact());
+    main.appendChild(bigSectionComponent());
+    main.appendChild(smallSectionComponent());
 }
 
 export default contactComponent;
