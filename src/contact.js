@@ -7,8 +7,8 @@ import './styles/contactStyle.css';
 //     return pageHeading;
 // }
 
-function contactBigSecComponent() {
-
+function loadContact() {
+    /* Big top section */
     const bigSection = document.createElement('section');
 
     const mapImg = document.createElement('img');
@@ -78,11 +78,8 @@ function contactBigSecComponent() {
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 
-   return bigSection;
-}
-
-function contactSmallSecComponent() {
-
+    /* Small bottom section */
+    /*
     const smallSection = document.createElement('section');
 
     const contactDiv = document.createElement('div');
@@ -123,9 +120,9 @@ function contactSmallSecComponent() {
     const twImg = document.createElement('img');
     twImg.src = '#';
     twImg.alt = 'twitter';
-    twBtn.appendChild(twImg);
-    
-   return smallSection;
+    twBtn.appendChild(twImg);*/
+
+   return bigSection /*&& smallSection*/;
 }
 
 function contactComponent() {
@@ -138,8 +135,7 @@ function contactComponent() {
 
     const main = document.querySelector(".mainContent");
     main.textContent = "";
-    main.appendChild(contactBigSecComponent());
-    main.appendChild(contactSmallSecComponent());
+    main.appendChild(loadContact());
 }
 
 export default contactComponent;

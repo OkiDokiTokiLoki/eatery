@@ -2,6 +2,7 @@ import landingComponent from "./home";
 import menuPageComponent from "./menu";
 import contactComponent from "./contact";
 import './style.css';
+import _, { over } from 'lodash';
 
 function headerComponent() {  
 
@@ -110,12 +111,20 @@ function footerComponent() {
    return footer;
 }
 
+function overlayComponent(){
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    
+    return overlay;
+}
+
 function initial() {
     const content = document.getElementById("content");
 
     content.appendChild(headerComponent());
     content.appendChild(injectContent());
     content.appendChild(footerComponent());
+    content.appendChild(overlayComponent());
 
     setActiveButton(document.querySelector(".nav-link"));
     landingComponent();
