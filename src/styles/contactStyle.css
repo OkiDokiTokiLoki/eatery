@@ -31,10 +31,6 @@ section{
     margin-top: 150px;
 }
 
-h2{
-    margin-bottom: 15px;
-}
-
 .form{
     height: 100%;
     display: flex;
@@ -59,6 +55,18 @@ textarea{
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+
+.submit{
+    background-color: var(--primary-col);
+    color: #fff;
+    width: 80%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.submit:hover{
+    background-color: hsl(24, 70%, 36%);
 }
 
 .contact{

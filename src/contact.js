@@ -20,9 +20,9 @@ function bigSectionComponent() {
     formDiv.classList.add('form');
     bigSection.appendChild(formDiv);
 
-    const heading2 = document.createElement('h2');
-    heading2.textContent = "We'd love to hear from you";
-    formDiv.appendChild(heading2);
+    // const heading2 = document.createElement('h2');
+    // heading2.textContent = "We'd love to hear from you";
+    // formDiv.appendChild(heading2);
 
     const form = document.createElement('form');
     formDiv.appendChild(form);
@@ -79,6 +79,11 @@ function bigSectionComponent() {
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
 
+    const submitBtn = document.createElement('button');
+    submitBtn.textContent = "We'd love to hear from you";
+    submitBtn.classList.add('submit');
+    formDiv.appendChild(submitBtn);
+
     /* Small bottom section */
     /*
     const smallSection = document.createElement('section');
@@ -123,7 +128,7 @@ function bigSectionComponent() {
     twImg.alt = 'twitter';
     twBtn.appendChild(twImg);*/
 
-    document.body.style.background = './assets/lum3n-Ngy0B2YWalk-unsplash.jpg';
+    // document.body.style.background = '../assets/lum3n-Ngy0B2YWalk-unsplash.jpg';
 
    return bigSection /*&& smallSection*/;
 }
