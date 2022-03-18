@@ -75,7 +75,9 @@ header{
 
 .nav-item{
     margin-left: 50px;
-    padding: 10px 35px;
+    width: 150px;
+    height: 65px;
+    text-align: center;
 }
 
 .nav-item:hover{
@@ -87,10 +89,6 @@ header{
     color: #fff;
     font-size: 35px;
     text-decoration: none;
-}
-
-.navBtn{
-    padding: 10px 35px;
 }
 
 footer{
