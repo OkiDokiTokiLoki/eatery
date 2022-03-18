@@ -32,6 +32,8 @@ function homeComponent() {
     const detailsP2 = document.createElement('p');
     detailsP2.textContent = 'Delivery: 123 123 1234';
     details.appendChild(detailsP2);
+
+    // document.body.style.background = 'url(../assets/ferks-guare-burger.jpg)';
     
    return main;
 }

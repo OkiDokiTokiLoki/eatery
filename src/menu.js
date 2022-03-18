@@ -128,6 +128,8 @@ function createMenuItem(name, description, price) {
     foodPrice.textContent = price;
     menuItem.appendChild(foodPrice);
 
+    // document.body.style.background = '../assets/alex_rainer-gN49R_5vhT8-unsplash.jpg';
+
     return menuItem;
 }
 

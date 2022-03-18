@@ -73,8 +73,8 @@ function bigSectionComponent() {
     const listInputMessage = document.createElement('textarea');  
     listInputMessage.name = 'message';
     listInputMessage.id = 'contactMessage';
-    listInputMessage.cols = '35';
-    listInputMessage.rows = '5';   
+    listInputMessage.cols = '23';
+    listInputMessage.rows = '4';   
     listInputMessage.placeholder = 'Any questions or suggestions?';
     listInputMessage.required = true;
     listItem3.appendChild(listInputMessage);
@@ -122,6 +122,8 @@ function bigSectionComponent() {
     twImg.src = '#';
     twImg.alt = 'twitter';
     twBtn.appendChild(twImg);*/
+
+    document.body.style.background = './assets/lum3n-Ngy0B2YWalk-unsplash.jpg';
 
    return bigSection /*&& smallSection*/;
 }

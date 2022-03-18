@@ -54,6 +54,8 @@ button:hover{
 .active.nav-btn{
     cursor: default !important;
     pointer-events: none;
+    width: 150px;
+    height: 65px;
     background-color: var(--primary-col);
 }
 
@@ -89,6 +91,8 @@ header{
     color: #fff;
     font-size: 35px;
     text-decoration: none;
+    width: 150px;
+    height: 65px;
 }
 
 footer{
