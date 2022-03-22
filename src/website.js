@@ -17,8 +17,8 @@ function headerComponent() {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
         landingComponent();
-        imgCreditLink.textContent = 'image credit: Alex Rainer [unsplash]';
-        imgCreditLink.setAttribute('href', 'https://unsplash.com/photos/gN49R_5vhT8');
+        imgCreditLink.textContent = 'image credit: Ferks Guare [unsplash]';
+        imgCreditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
     });
 
     const navbar = document.createElement('ul');
@@ -37,8 +37,8 @@ function headerComponent() {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
         menuPageComponent();
-        imgCreditLink.textContent = 'image credit: Ferks Guare [unsplash]';
-        imgCreditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
+        imgCreditLink.textContent = 'image credit: Alex Rainer [unsplash]';
+        imgCreditLink.setAttribute('href', 'https://unsplash.com/photos/gN49R_5vhT8');
     });
 
     const navItem2 = document.createElement('li');
@@ -100,8 +100,8 @@ function footerComponent() {
 
     const creditLink = document.createElement('a');
     creditLink.classList.add('credit');
-    creditLink.textContent = 'image credit: Alex Rainer [unsplash]';
-    creditLink.setAttribute('href', 'https://unsplash.com/photos/gN49R_5vhT8');
+    creditLink.textContent = 'image credit: Ferks Guare [unsplash]';
+    creditLink.setAttribute('href', 'https://unsplash.com/photos/KEZdWfYD-ow');
     footer.appendChild(creditLink);
     
    return footer;
@@ -118,9 +118,9 @@ function initial() {
     const content = document.getElementById("content");
 
     content.appendChild(injectContent());
-    content.appendChild(headerComponent());
     content.appendChild(footerComponent());
     content.appendChild(overlayComponent());
+    content.appendChild(headerComponent());
     
 
     setActiveButton(document.querySelector(".nav-link"));
