@@ -1,11 +1,5 @@
 import './styles/contactStyle.css';
 
-// function contactH1Component(){
-//     const pageHeading = document.createElement('h1');
-//     pageHeading.innerText = 'Get in touch';
-
-//     return pageHeading;
-// }
 
 function bigSectionComponent() {
 
@@ -19,10 +13,6 @@ function bigSectionComponent() {
     const formDiv = document.createElement('div');
     formDiv.classList.add('form');
     bigSection.appendChild(formDiv);
-
-    // const heading2 = document.createElement('h2');
-    // heading2.textContent = "We'd love to hear from you";
-    // formDiv.appendChild(heading2);
 
     const form = document.createElement('form');
     formDiv.appendChild(form);
@@ -73,7 +63,7 @@ function bigSectionComponent() {
     const listInputMessage = document.createElement('textarea');  
     listInputMessage.name = 'message';
     listInputMessage.id = 'contactMessage';
-    listInputMessage.cols = '23';
+    listInputMessage.cols = '22';
     listInputMessage.rows = '4';   
     listInputMessage.placeholder = 'Any questions or suggestions?';
     listInputMessage.required = true;
@@ -84,53 +74,9 @@ function bigSectionComponent() {
     submitBtn.classList.add('submit');
     formDiv.appendChild(submitBtn);
 
-    /* Small bottom section */
-    /*
-    const smallSection = document.createElement('section');
+    document.body.style.background = 'url(../src/assets/lum3n-Ngy0B2YWalk-unsplash.jpg)';
 
-    const contactDiv = document.createElement('div');
-    contactDiv.classList.add('contact');
-    smallSection.appendChild(contactDiv);
-
-    const contactAddress = document.createElement('p');
-    contactAddress.textContent = '123 Real Address, Fictional Town';
-    contactDiv.appendChild(contactAddress);
-
-    const contactDelivery = document.createElement('p');
-    contactDelivery.textContent = 'Delivery: 123 123 1234';
-    contactDiv.appendChild(contactDelivery);
-
-    const socialsDiv = document.createElement('div');
-    socialsDiv.classList.add('socials');
-    smallSection.appendChild(socialsDiv);
-
-    const fbBtn = document.createElement('button');
-    socialsDiv.appendChild(fbBtn);
-
-    const fbImg = document.createElement('img');      
-    fbImg.src = '#';
-    fbImg.alt = 'facebook';
-    fbBtn.appendChild(fbImg);
-
-    const igBtn = document.createElement('button');
-    socialsDiv.appendChild(igBtn);
-
-    const igImg = document.createElement('img');
-    igImg.src = '#';
-    igImg.alt = 'instagram';
-    igBtn.appendChild(igImg);
-
-    const twBtn = document.createElement('button');
-    socialsDiv.appendChild(twBtn);
-
-    const twImg = document.createElement('img');
-    twImg.src = '#';
-    twImg.alt = 'twitter';
-    twBtn.appendChild(twImg);*/
-
-    // document.body.style.background = '../assets/lum3n-Ngy0B2YWalk-unsplash.jpg';
-
-   return bigSection /*&& smallSection*/;
+   return bigSection;
 }
 
 function smallSectionComponent() {

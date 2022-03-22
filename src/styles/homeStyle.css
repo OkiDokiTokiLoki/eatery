@@ -1,11 +1,20 @@
 body{
-    background: url(../assets/ferks-guare-burger.jpg) no-repeat fixed center;
+    /* background: url(../assets/ferks-guare-burger.jpg) no-repeat fixed center; */
     padding-left: 5%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     height: 95vh;
+}
+
+.bg-img{
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    width: 50vw;
+    /* height: 100vh; */
+    z-index: -1;
 }
 
 .main{

@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     height: 95vh;
-    background: url(../assets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed;
+    /* background: url(../assets/lum3n-Ngy0B2YWalk-unsplash.jpg)  no-repeat fixed; */
 }
 
 h1{
@@ -60,9 +60,10 @@ textarea{
 .submit{
     background-color: var(--primary-col);
     color: #fff;
-    width: 80%;
+    width: 100%;
     align-self: center;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .submit:hover{

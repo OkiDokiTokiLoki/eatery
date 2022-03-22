@@ -24,9 +24,11 @@ ul{
     list-style: none;
 }
 
-/* .logo-link{
+.logo-link{
     background-color: var(--primary-col);
-} */
+    width: 200px !important;
+    border: 2px solid #fff;
+}
 
 button{
     background-color: transparent;

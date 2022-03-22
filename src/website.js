@@ -117,11 +117,11 @@ function overlayComponent(){
 function initial() {
     const content = document.getElementById("content");
 
-    
     content.appendChild(injectContent());
+    content.appendChild(headerComponent());
     content.appendChild(footerComponent());
     content.appendChild(overlayComponent());
-    content.appendChild(headerComponent());
+    
 
     setActiveButton(document.querySelector(".nav-link"));
     landingComponent();
