@@ -34,7 +34,10 @@ function homeComponent() {
     details.appendChild(detailsP2);
 
     document.body.style.background = 'url(../src/assets/ferks-guare-burger.jpg)';
-    
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+
    return main;
 }
 
