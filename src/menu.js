@@ -135,7 +135,6 @@ function createMenuItem(name, description, price) {
 
 
 function menuPageComponent() { 
-
     const main = document.querySelector(".mainContent");
     main.textContent = "";
     main.appendChild(createMenu());

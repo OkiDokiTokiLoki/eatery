@@ -122,7 +122,6 @@ function initial() {
     content.appendChild(overlayComponent());
     content.appendChild(headerComponent());
     
-
     setActiveButton(document.querySelector(".nav-link"));
     landingComponent();
 }

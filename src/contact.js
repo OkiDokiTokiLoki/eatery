@@ -129,7 +129,6 @@ function smallSectionComponent() {
 
 
 function contactComponent() {
-
     const main = document.querySelector(".mainContent");
     main.textContent = "";
     main.appendChild(bigSectionComponent());
